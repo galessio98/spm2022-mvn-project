@@ -1,0 +1,34 @@
+package unicam.spm2022;
+
+public class MyOperations {
+	
+	int a;
+	int b;
+	
+	public MyOperations() {
+	    a = 0;
+	    b = 0;
+	  }
+	
+	public static void main( String[] args )
+    {
+		
+		MyOperations mC = new MyOperations();
+     
+		mC.a = 5;
+		mC.b = 0;
+		
+		System.out.println(mC.multiply(mC.a,mC.b));
+		
+		
+    }
+	
+	
+	public int multiply(int x, int y) {
+		return (x*y);
+	}
+	
+	public int divide(int x, int y) {
+		return (x/y);
+	}
+}
