@@ -20,6 +20,12 @@ public class MyOperations {
 		
 		System.out.println(mC.multiply(mC.a,mC.b));
 		
+		if(mC.b==0) {
+			System.out.println("Division by zero");
+			return;
+		}
+		
+		System.out.println(mC.divide(mC.a,mC.b));
 		
     }
 	
