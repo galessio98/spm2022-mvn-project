@@ -1,4 +1,4 @@
-package unicam.spm2022;
+package unicam.spm2022.junit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import org.junit.jupiter.api.condition.EnabledOnOs;
+
+import unicam.spm2022.HelloWorld;
 
 import static org.junit.jupiter.api.condition.OS.LINUX;
 import static org.junit.jupiter.api.condition.OS.MAC;
@@ -118,7 +120,6 @@ public class HelloWorldTest {
 	}
 
 	@Test
-	//@Disabled
 	@EnabledOnOs(WINDOWS)
 	void onlyOnWindowsOs() {
 		HelloWorld tester = new HelloWorld();

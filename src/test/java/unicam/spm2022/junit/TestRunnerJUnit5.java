@@ -1,4 +1,4 @@
-package unicam.spm2022;
+package unicam.spm2022.junit;
 
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.Launcher;

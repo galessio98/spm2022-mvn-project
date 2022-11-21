@@ -1,8 +1,12 @@
-package unicam.spm2022;
+package unicam.spm2022.junit;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import unicam.spm2022.MyOperations;
 
 public class MyOperationsTest {
     @Test
@@ -16,6 +20,7 @@ public class MyOperationsTest {
     
     
     @Test
+    @Disabled
     public void divisionByZeroIntegersShouldReturnErrorMessage() {
         MyOperations tester = new MyOperations(); // MyClass is tested
         // assert statements

@@ -1,4 +1,4 @@
-package unicam.spm2022;
+package unicam.spm2022.junit;
 
 import static org.junit.Assert.assertTrue;
 

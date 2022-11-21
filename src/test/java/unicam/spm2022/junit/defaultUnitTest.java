@@ -1,4 +1,4 @@
-package unicam.spm2022;
+package unicam.spm2022.junit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,41 +8,39 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
-
-class PalindromeTest {
+class defaultUnitTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		System.out.println("BeforeAll");
 	}
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
+		System.out.println("AfterAll");
 	}
 
 	@BeforeEach
 	void setUp() throws Exception {
+		System.out.println("BeforeEach");
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
+		System.out.println("AfterEach");
 	}
 
 	@Test
 	@Disabled
-	void test() {
+	void test1() {
 		fail("Not yet implemented");
 	}
 	
-	@ParameterizedTest
+	@Test
 	@Disabled
-	@ValueSource(strings = { "pippo" , "racecar", "radar", "able was I ere I saw elba" })
-	void palindromes(String candidate) {
-		
-	  assertTrue(Palindrome.isPalindrome(candidate));
+	void test2() {
+		fail("Not yet implemented");
 	}
-
 
 }
