@@ -7,6 +7,7 @@
   <groupId>unicam</groupId>
   <artifactId>spm2022</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>spm2022</name>
   <!-- FIXME change it to the project's website -->
@@ -91,12 +92,34 @@
 		    <version>1.8.1</version>
 		</dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.json/json -->
-	<dependency>
-	    <groupId>org.json</groupId>
-	    <artifactId>json</artifactId>
-	    <version>20220924</version>
-	</dependency>
+	    <!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20220924</version>
+		</dependency>
+	    
+	    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.6.0</version>
+		</dependency>
+		
+		<dependency>
+		 <groupId>io.github.bonigarcia</groupId>
+		 <artifactId>webdrivermanager</artifactId>
+		 <version>4.3.1</version>
+		</dependency>
+			
+		<!-- Rest Assured -->
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>rest-assured</artifactId>
+		    <version>4.3.2</version>
+		    <scope>test</scope>
+		</dependency>
     
   </dependencies>
 
@@ -125,6 +148,14 @@
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        <plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-war-plugin</artifactId>
+		    <version>3.3.1</version>
+		    <configuration>
+	          <failOnMissingWebXml>false</failOnMissingWebXml>
+	        </configuration>
+		</plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
