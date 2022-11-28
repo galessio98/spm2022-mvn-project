@@ -73,7 +73,7 @@ class SeleniumTest2 {
 	}
 	
 	@Test
-	//@Disabled
+	@Disabled
 	void checkProsSiteSearch() throws InterruptedException {
 		
 		// navigate your driver to mail.google.com
@@ -99,15 +99,15 @@ class SeleniumTest2 {
 	}
 	
 	@Test
-	@Disabled
+	//@Disabled
 	void checkThisWebAppTitle() throws InterruptedException {
 		
-		driver.get("http://localhost:80/spm2021/");
+		driver.get("http://localhost:8080/spm2022/");
 
 		Thread.sleep(3000);
 		
 		String at = driver.getTitle();
-		String et = "SPM 2021";
+		String et = "SPM 2022";
 		
 		//System.out.println(at);		
 		Thread.sleep(4000);
