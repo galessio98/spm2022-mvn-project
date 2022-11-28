@@ -187,7 +187,6 @@ folder .settings.xml telling eclipse to read them from there
 					<username>war-deployer</username>
 					<password>maven-tomcat-plugin</password>
 					<update>true</update>
-					<!-- <url>http://localhost:8080/manager/text</url>-->
 				</configuration>
 			</plugin>
       </plugins>
