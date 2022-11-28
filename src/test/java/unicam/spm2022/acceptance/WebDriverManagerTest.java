@@ -3,6 +3,7 @@ package unicam.spm2022.acceptance;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterAll;
@@ -36,7 +37,7 @@ class WebDriverManagerTest {
 		WebDriverManager.chromedriver().setup();
 	    ChromeOptions options = new ChromeOptions();
 	    driver = new ChromeDriver(options);	
-	    driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  
 	}
 
 	@AfterEach
