@@ -13,7 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-class SeleniumTest2 {
+class SeleniumNewTest {
 
 	static String projectPath;	
 	static WebDriver driver;
