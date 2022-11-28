@@ -35,8 +35,8 @@ class WebDriverManagerTest {
 	void setUp() throws Exception {
 		WebDriverManager.chromedriver().setup();
 	    ChromeOptions options = new ChromeOptions();
-	    driver = new ChromeDriver(options);	    
-	    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
+	    driver = new ChromeDriver(options);	
+	    driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 
 	@AfterEach
