@@ -2,6 +2,7 @@ package unicam.spm2022;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +17,7 @@ public class SeleniumTest {
         driver = new ChromeDriver();
     }
 
+    @Disabled
     @Test
     void checkThisWebAppTitle() throws InterruptedException {
         driver.get("http://localhost:8080/spm2022/");
