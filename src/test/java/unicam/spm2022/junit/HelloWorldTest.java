@@ -69,14 +69,14 @@ public class HelloWorldTest {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	@Tag("display")
 	@DisplayName(" °□°） ")
 	void testWithDisplayNameContainingSpecialCharacters() {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	@Tag("display")
 	@DisplayName("😈")
 	void testWithDisplayNameContainingEmoji() {

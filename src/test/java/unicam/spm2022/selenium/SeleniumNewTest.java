@@ -38,6 +38,7 @@ class SeleniumNewTest {
 	 * @throws java.lang.Exception
 	 */
 	@BeforeEach
+	@Disabled
 	void setUp() throws Exception {
 
 		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/mac/arm/chromedriver");
@@ -48,6 +49,7 @@ class SeleniumNewTest {
 	 * @throws java.lang.Exception
 	 */
 	@AfterEach
+	@Disabled
 	void tearDown() throws Exception {
 		driver.close();
 		driver.quit();

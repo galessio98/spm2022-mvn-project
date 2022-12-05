@@ -47,7 +47,7 @@ class WebDriverManagerTest {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	@Tag("AcceptanceTest")
 	void testMyGitHubAction() {
 		  driver.get(baseUrl);

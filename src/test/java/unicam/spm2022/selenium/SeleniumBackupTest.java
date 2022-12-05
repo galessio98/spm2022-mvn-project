@@ -40,6 +40,7 @@ class SeleniumBackupTest {
 	 * @throws java.lang.Exception
 	 */
 	@BeforeEach
+	@Disabled
 	void setUp() throws Exception {
 		if(System.getProperty("os.name").equals("Mac OS X")) {
 			System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/mac/chromedriver");
@@ -54,6 +55,7 @@ class SeleniumBackupTest {
 	 * @throws java.lang.Exception
 	 */
 	@AfterEach
+	@Disabled
 	void tearDown() throws Exception {
 		driver.close();
 		driver.quit();
